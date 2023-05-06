@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: lightcyan;
+  /* height: 100vh; */
+}
+
+main {
+  padding: 4rem 0;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.underline {
+  width: 100px;
+  height: 5px;
+  background: orangered;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 0.35rem;
+}
+
+.menu-items {
+  width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 17rem;
+}
+
+.item {
+  background: white;
+  margin-bottom: 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s;
+  cursor: pointer;
+  max-width: 25rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.item:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.item header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item header h4 {
+  letter-spacing: 1.5px;
+}
+
+.item-price {
+  padding: 0.25rem 0.65rem;
+  background: orangered;
+  border-radius: 7px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.info {
+  padding: 1rem;
+  color: gray;
+  line-height: 2;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.35rem 0.65rem;
+  margin-left: 0.5rem;
+  text-transform: capitalize;
+  border: 1px solid orangered;
+  background: orangered;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: white;
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-items {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  .menu-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
